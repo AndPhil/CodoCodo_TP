@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andrés Phileas">
+    <meta name="description" content="Proyecto CodoCodo con Bootstrap.">
+    <meta name="keywords" content="html, css, bootstrap">
+
+    <!-- BootStrap -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/img/codoacodo.png">
+
+    <!-- Título -->
+    <title>TP Integrador | CodoCodo</title>
+
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <nav>
+      <div class="navbar-container">
+
+        <div class="navbar-item item1">
+        
+          <a href="#">
+            <img src="/img/codoacodo.png" alt="Icono CodoCodo">
+          </a>
+  
+          <h2>Conf Bs As</h2>
+  
+        </div>
+  
+        <div class="navbar-item item2">
+          <a href="#">La conferencia</a>
+          <a href="#">Los oradores</a>
+          <a href="#">El lugar y la fecha</a>
+          <a href="#">Conviértete en orador</a>
+          <a id="compra" href="#">Comprar tickets</a>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- Imagen cabecera -->
+    <header>
+
+      <img src="/img/ba1.jpg" alt="Imagen fondo cabecera.">
+
+      <div class="header-container">
+
+        <div class="header-item">
+
+          <div>
+            <h1>Conf Bs As</h1>
+          <p>Bs As llega por primera vez a Argentina. Un evento para ocmpartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a concer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+          </div>
+          
+          <div class="header-buttons">
+            <button>Quiero ser orador</button>
+            <button id="btn-compra">Comprar tickets</button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </header>
+
+    <!-- Sección Oradores -->
+    <section>
+
+      <div class="sec_oradores-titulo">
+        <h3>CONOCE A LOS</h3>
+        <h1>ORADORES</h1>
+      </div>
+
+      <div class="sec_oradores-cards">
+
+        <!-- Card - Steve Jobs -->
+        <div class="sec_oradores-card">
+
+          <div class="card-img">
+            <img src="/img/steve.jpg" alt="Steve Jobs">
+          </div>
+
+          <div class="card-text">
+            <div class="card-text-topics">
+              <p id="java">Java Script</p>
+              <p id="react">React</p>
+            </div>
+
+            <div class="card-text-name">
+              Steve Jobs
+            </div>
+
+            <div class="card-text-info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere incidunt quae iste atque rerum nostrum eligendi sint possimus itaque delectus harum illum dolorem ex repudiandae repellat quam excepturi, tenetur quo.
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Card - Bill Gates -->
+        <div class="sec_oradores-card">
+
+          <div class="card-img">
+            <img src="/img/bill.jpg" alt="Bill Gates">
+          </div>
+
+          <div class="card-text">
+            <div class="card-text-topics">
+              <p id="java">Java Script</p>
+              <p id="react">React</p>
+            </div>
+
+            <div class="card-text-name">
+              Bill Gates
+            </div>
+
+            <div class="card-text-info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere incidunt quae iste atque rerum nostrum eligendi sint possimus itaque delectus harum illum dolorem ex repudiandae repellat quam excepturi, tenetur quo.
+              Mas largo para probar flex-start.
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Card - Ada Lovelace -->
+        <div class="sec_oradores-card">
+
+          <div class="card-img">
+            <img src="/img/ada.jpeg" alt="Ada Lovelace">
+          </div>
+
+          <div class="card-text">
+            <div class="card-text-topics">
+              <p id="negocios">Negocios</p>
+              <p id="startups">Startups</p>
+            </div>
+
+            <div class="card-text-name">
+              Ada Lovelace
+            </div>
+
+            <div class="card-text-info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere incidunt quae iste atque rerum nostrum eligendi sint possimus itaque delectus harum illum dolorem ex repudiandae repellat quam excepturi, tenetur quo.
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Sección Lugar/Fecha -->
+    <section>
+      <div class="section-container">
+        
+        <div class="section-item izq">
+          <img src="/img/honolulu.jpg" alt="Paisaje">
+        </div>
+
+        <div class="section-item der">
+          <h1>Bs As - Octubre</h1>
+          <p>Buenos Aires es la provincia y localidad mas grande de los estados de Argentina, en los Estados Unidos. Hondulu es la mas sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Hondulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Hondulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km2 de superficio).</p>
+          <button id="btn-conoce">Conocé mas</button>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Formulario -->
+    <section>
+
+      <div class="form-text">
+        <h3>CONVIERTETE EN UN</h3>
+        <h1>ORADOR</h1>
+        <h3>Anotate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</h3>
+      </div>
+
+      <div class="form-container">
+        
+        <form action="" class="form">
+
+            <div class="form-section">
+              <input class="form-input" type="text" required="Campo requeirdo" placeholder="Nombre">
+              <input class="form-input" type="text" required="Campo requeirdo" placeholder="Apellido">
+            </div>
+
+            <div class="form-section">
+              <textarea class="form-area" name="Area de texto" placeholder="Área de texto..." class="text-area"></textarea>
+            </div>
+
+            <p>Recuerda incluir un título para tu charla.</p>
+
+            <div class="form-section">
+                <input type="submit" class="form-button">
+            </div>
+        </form>
+
+      </div>
+
+    </section>
+    <form action=""></form>
+
+    <!-- Pie de página -->
+    <footer>
+
+      <div class="footer">
+        <a href="3">Preguntas frecuentes</a>
+        <a href="3">Contáctanos</a>
+        <a href="3">Prensa</a>
+        <a href="3">Conferencias</a>
+        <a href="3">Términos y condiciones</a>
+        <a href="3">Privacidad</a>
+        <a href="3">Estudiantes</a>
+      </div>
+
+    </footer>
+
+</body>
+</html>

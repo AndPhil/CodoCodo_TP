@@ -1,0 +1,398 @@
+body {
+    margin: 0;
+}
+
+/*----- HEADER -----*/
+nav {
+    background-color: rgb(65, 65, 65);
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: space-around;
+    align-items: center;
+    
+    padding: 5px;  
+}
+
+.navbar-item {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+    padding: 0px;
+    color: white;
+
+    cursor: pointer;
+}
+
+.navbar-item img {
+    display: flex;
+    width: 120px;
+}
+
+.navbar-item h2 {
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
+.navbar-item.item2 a {
+    color: lightslategrey;
+    text-decoration: none;
+    font-size: 25px;
+    padding-left: 20px;
+
+    transition: 0.3s;
+}
+
+.navbar-item.item2 a:hover {
+    color: white;
+    transform: scale(110%);
+}
+
+#compra {
+    color: rgb(5, 165, 5);
+    transition: 0.3s;
+}
+
+#compra:hover {
+    color: greenyellow;
+    text-shadow: 1px 1px 15px white;
+}
+
+/*----- HEADER -----*/
+header {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+header img {
+    width: 100%;
+    position: relative;
+    bottom: 200px;
+    
+    filter: brightness(0.5);
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.header-item {
+    min-width: 400px;
+    max-width: 35%;
+    min-height: 100px;
+
+    margin-right: 150px;
+    position: absolute;
+    bottom: 250px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: end;
+
+    color: white;
+}
+
+.header-item h1 {
+    font-size: 50px;
+}
+
+.header-item p {
+    font-size: 25px;
+}
+
+button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: white;
+
+    padding: 10px;
+    margin: 10px;
+
+    border-radius: 10px;
+    border: solid white 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    transition: 0.3s;    
+
+    cursor: pointer;
+}
+
+#btn-compra {
+    background-color: rgb(1, 150, 1);
+    border: none;
+}
+
+button:hover {
+    transform: scale(110%);
+    box-shadow: 5px 5px 25px white;
+}
+
+/*----- SECTION ORADORES -----*/
+section {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.sec_oradores-titulo {
+    display: grid;
+    margin: 0px;
+    margin-top: 15px;
+    justify-content: center;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sec_oradores-titulo h3 {
+    justify-self: center;
+    margin: 0px;
+    font-weight: 200;
+}
+
+.sec_oradores-titulo h1 {
+    font-size: 40px;
+    margin: 0px;
+    font-weight: 400;
+}
+
+.sec_oradores-cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.sec_oradores-card {
+    border: solid 1px lightslategrey;
+    border-radius: 15px;
+    overflow: hidden;
+
+    width: 350px;
+    margin: 15px;
+
+    transition: 0.3s;
+}
+
+.sec_oradores-card:hover {
+    transform: scale(110%);
+    box-shadow: 5px 10px 25px grey;
+}
+
+.card-img img {
+    width: 100%;
+}
+
+.card-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+}
+
+.card-text-topics {
+    display: flex;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.card-text-topics p {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+#java {
+    background-color: rgb(242, 167, 28);
+}
+
+#react {
+    background-color: rgb(73, 185, 255);
+    color: white;
+    text-shadow: 0 0 1px black;
+}
+
+#negocios {
+    background-color: gray;
+    color: white;
+    text-shadow: 0 0 1px black;
+}
+
+#startups {
+    background-color: rgb(200, 0, 0);
+    color: white;
+    /*text-shadow: 0 0 1px black;*/
+}
+
+.card-text-name {
+    font-weight: 500;
+    font-size: 30px;
+    margin: 0;
+}
+
+.card-text-info {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+/*----- SECTION LUGAR -----*/
+
+.section-container {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+
+.section-item {
+    width: 50%;
+}
+
+.izq img{
+    width: 100%;
+}
+
+.der {
+    padding: 20px;
+    background-color: rgb(65, 65, 65);
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.der h1 {
+    font-size: 30px;
+}
+
+.der p {
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+#btn-conoce {
+    background-color: transparent;
+    font-size: 15px;
+    margin: 0;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+/*----- FORMULARIO -----*/
+.form-text {
+    display: grid;
+    justify-content: center;
+    padding-bottom: 20px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form-text h1 {
+    font-size: 40px;
+    margin: 0px;
+    font-weight: 400;
+    justify-self: center;
+}
+
+.form-text h3 {
+    justify-self: center;
+    margin: 0px;
+    font-weight: 200;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    display: block;
+    min-width: 50%;
+    height: auto;
+}
+
+.form-section {
+    display: flex;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.form-input {
+    width: 50%;
+    min-height: 20px;
+    height: auto;
+}
+
+.form-area {
+    height: 100px;
+    width: 100%;
+}
+
+.form p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+
+    color: white;
+    font-weight: 600;
+    
+    background-color: rgb(128, 187, 39);
+    border-radius: 5px;
+    border: none;
+
+    cursor: pointer;
+}
+
+.form-button:hover {
+    box-shadow: 1px 1px 25px grey;
+    text-shadow: 1px 1px 10px black;
+}
+
+/*----- PIE DE PAGINA -----*/
+footer {
+    background-color: rgb(8, 96, 120);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 35px;
+
+    transition: 0.3s;
+}
+
+footer a:hover {
+    transform: scale(110%);
+    text-shadow: 1px 1px 15px rgb(0, 0, 0);
+}
