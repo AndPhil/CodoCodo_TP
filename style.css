@@ -1,398 +1,523 @@
 body {
     margin: 0;
+    padding: 0;
+    
+    max-width: 1280px;
+    min-width: 800px;
+    height: auto;
+    margin: auto;
+
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    overflow-x: hidden;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/*----- HEADER -----*/
-nav {
+main {
+    background-color: white;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: rgb(65, 65, 65);
 }
 
-.navbar-container {
+header section {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-
-    justify-content: space-around;
     align-items: center;
-    
-    padding: 5px;  
-}
-
-.navbar-item {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    
-    padding: 0px;
     color: white;
-
-    cursor: pointer;
+    font-size: .9rem;
 }
 
-.navbar-item img {
+header section img {
+    width: 100px;
+}
+
+header nav {
     display: flex;
-    width: 120px;
+    gap: 20px;
+    font-size: .9rem;
+    font-weight: 500;
 }
 
-.navbar-item h2 {
-    color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 25px;
-}
-
-.navbar-item.item2 a {
-    color: lightslategrey;
+header a {
+    color: rgb(200, 200, 200);
     text-decoration: none;
-    font-size: 25px;
-    padding-left: 20px;
 
     transition: 0.3s;
 }
 
-.navbar-item.item2 a:hover {
+header a:hover {
     color: white;
+    text-shadow: 0px 0px 15px rgb(255, 255, 120);
     transform: scale(110%);
-}
-
-#compra {
-    color: rgb(5, 165, 5);
-    transition: 0.3s;
-}
-
-#compra:hover {
-    color: greenyellow;
-    text-shadow: 1px 1px 15px white;
-}
-
-/*----- HEADER -----*/
-header {
-    width: 100%;
-    height: 800px;
-    overflow: hidden;
-}
-
-header img {
-    width: 100%;
-    position: relative;
-    bottom: 200px;
-    
-    filter: brightness(0.5);
-}
-
-.header-container {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.header-item {
-    min-width: 400px;
-    max-width: 35%;
-    min-height: 100px;
-
-    margin-right: 150px;
-    position: absolute;
-    bottom: 250px;
-
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: end;
-
-    color: white;
-}
-
-.header-item h1 {
-    font-size: 50px;
-}
-
-.header-item p {
-    font-size: 25px;
-}
-
-button {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 25px;
-    color: white;
-
-    padding: 10px;
-    margin: 10px;
-
-    border-radius: 10px;
-    border: solid white 1px;
-    background-color: rgba(0, 0, 0, 0.5);
-
-    transition: 0.3s;    
-
-    cursor: pointer;
 }
 
 #btn-compra {
-    background-color: rgb(1, 150, 1);
-    border: none;
+    color: rgb(0, 150, 0);
 }
 
-button:hover {
-    transform: scale(110%);
-    box-shadow: 5px 5px 25px white;
-}
 
-/*----- SECTION ORADORES -----*/
-section {
+/* ARTICLES */
+article {
     width: 100%;
-    margin-bottom: 30px;
+    min-height: 400px;
+    background-color: white;
+
+    /* overflow: auto; */
 }
 
-.sec_oradores-titulo {
-    display: grid;
-    margin: 0px;
-    margin-top: 15px;
-    justify-content: center;
-
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.sec_oradores-titulo h3 {
-    justify-self: center;
-    margin: 0px;
-    font-weight: 200;
-}
-
-.sec_oradores-titulo h1 {
-    font-size: 40px;
-    margin: 0px;
-    font-weight: 400;
-}
-
-.sec_oradores-cards {
+.article1 {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: row-reverse;
+
+    background-image: url(./img/ba1.jpg);
+    background-size: cover; 
+    background-position-y: -90px;
+    background-repeat: no-repeat;
 }
 
-.sec_oradores-card {
-    border: solid 1px lightslategrey;
-    border-radius: 15px;
-    overflow: hidden;
+.article1-filter {
+    display: inline;
+    width: 100%;
+    backdrop-filter: brightness(45%);
 
-    width: 350px;
-    margin: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+}
+
+.article1-filter section {
+    width: clamp(300px, 40%, 700px);
+    
+    color: white;
+    text-align: right;
+    font-size: .8rem;
+    font-weight: 100;
+    line-height: 1.1rem;
+
+    padding-right: 40px;
+    padding-bottom: 90px;
+}
+
+.article1-filter section h1 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.article1-filter section button {
+    padding: 8px 15px 8px 15px;
+    margin-left: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: rgb(169, 169, 169) solid 1px;
+    border-radius: 5px;
+
+    font-size: 0.75rem;
+    font-weight: 200;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+
+    cursor: pointer;
 
     transition: 0.3s;
 }
 
-.sec_oradores-card:hover {
+#btn-compra2{
+    background-color: rgb(9, 140, 9);
+    text-shadow: none;
+}
+
+.article1-filter section button:hover {
     transform: scale(110%);
-    box-shadow: 5px 10px 25px grey;
-}
-
-.card-img img {
-    width: 100%;
-}
-
-.card-text {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 20px;
-}
-
-.card-text-topics {
-    display: flex;
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.card-text-topics p {
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin: 0;
-    margin-right: 10px;
-    border-radius: 5px;
-}
-
-#java {
-    background-color: rgb(242, 167, 28);
-}
-
-#react {
-    background-color: rgb(73, 185, 255);
-    color: white;
-    text-shadow: 0 0 1px black;
-}
-
-#negocios {
-    background-color: gray;
-    color: white;
-    text-shadow: 0 0 1px black;
-}
-
-#startups {
-    background-color: rgb(200, 0, 0);
-    color: white;
-    /*text-shadow: 0 0 1px black;*/
-}
-
-.card-text-name {
-    font-weight: 500;
-    font-size: 30px;
-    margin: 0;
-}
-
-.card-text-info {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-    line-height: 25px;
-}
-
-/*----- SECTION LUGAR -----*/
-
-.section-container {
-    width: 100%;
-    display: flex;
-    gap: 5px;
-}
-
-.section-item {
-    width: 50%;
-}
-
-.izq img{
-    width: 100%;
-}
-
-.der {
-    padding: 20px;
-    background-color: rgb(65, 65, 65);
-
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-}
-
-.der h1 {
-    font-size: 30px;
-}
-
-.der p {
-    letter-spacing: 1px;
-    line-height: 25px;
-    font-size: 15px;
-}
-
-#btn-conoce {
-    background-color: transparent;
-    font-size: 15px;
-    margin: 0;
-    border-radius: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    box-shadow: 1px 5px 15px white;
 }
 
 
-/*----- FORMULARIO -----*/
-.form-text {
-    display: grid;
-    justify-content: center;
-    padding-bottom: 20px;
-
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+/* ARTICLES - ORADORES*/
+.article2 section:first-child {
+    text-align: center;
 }
 
-.form-text h1 {
-    font-size: 40px;
-    margin: 0px;
-    font-weight: 400;
-    justify-self: center;
-}
-
-.form-text h3 {
-    justify-self: center;
-    margin: 0px;
+.article2 section h3 {
+    font-size: 0.8rem;
     font-weight: 200;
+
+    margin: 5px 0 3px 0;
+    padding: 0;
 }
 
-.form-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.form {
-    display: block;
-    min-width: 50%;
-    height: auto;
-}
-
-.form-section {
-    display: flex;
-    width: 100%;
-    height: auto;
-    gap: 10px;
-    margin-bottom: 5px;
-}
-
-.form-input {
-    width: 50%;
-    min-height: 20px;
-    height: auto;
-}
-
-.form-area {
-    height: 100px;
-    width: 100%;
-}
-
-.form p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0;
-    padding-bottom: 5px;
-}
-
-.form-button {
-    width: 100%;
-    padding: 10px;
-
-    color: white;
+.article2 section h2 {
+    font-size: 1.5rem;
     font-weight: 600;
-    
-    background-color: rgb(128, 187, 39);
-    border-radius: 5px;
-    border: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.article2-cartas {
+    display: flex;
+    gap: 20px;
+
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.orador_card {
+    width: 275px;
+    border: solid 1px lightgray;
+    border-radius: 15px;
+    height: fit-content;
+
+    box-shadow: 0px 0px 10px grey;
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.orador_card:hover {
+    transform: scale(105%);
 
     cursor: pointer;
 }
 
-.form-button:hover {
-    box-shadow: 1px 1px 25px grey;
-    text-shadow: 1px 1px 10px black;
+.orador_card img {
+    width: 100%;
 }
 
-/*----- PIE DE PAGINA -----*/
-footer {
-    background-color: rgb(8, 96, 120);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    height: 100px;
+.orador_card-text {
+    margin: 0;
+    padding: 15px;
+}
 
+.orador_card-topics {
     display: flex;
+    gap: 5px;
+
+    padding: 0;
+    margin: 0;
+}
+.orador_card-topics h4 {
+    padding: 3px;
+    text-align: center;
+    border-radius: 5px;
+
+    margin: 0;
+}
+
+#java {
+    background-color: rgb(231, 190, 12);
+}
+
+#react {
+    background-color: rgb(21, 148, 162);
+    color: white;
+}
+
+#negocios {
+    background-color: grey;
+    color: white;
+}
+
+#startups {
+    background-color: rgb(172, 4, 4);
+    color: white;
+}
+
+#orador {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.orador_card-info {
+    font-size: .8rem;
+    line-height: 1.1rem;
+    letter-spacing: 0.1rem;
+}
+
+
+/* ARTICLES - LUGAR Y FECHA*/
+#lugar {
+    min-height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-img {
+    border: solid 1px white;
+}
+
+.grid-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.grid-info {
+    color: white;
+    background-color: rgb(56, 60, 73);
+    padding: 10px;
+    border: solid 1px white;
+}
+
+.grid-info h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    margin: 0;
+    padding: 0;
+}
+
+.grid-info p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    font-weight: 200;
+
+    margin: 5px 0 15px 0;
+}
+
+.grid-info button {
+    font-size: 0.8rem;
+    color: white;
+    background-color: transparent;
+    border: solid white 1px;
+    border-radius: 3px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.grid-info button:hover {
+    box-shadow: 0px 0px 5px white;
+}
+
+/* ARTICLES - FORMULARIO*/
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin: 10px;
+    min-height: 100%;
+}
+
+#form section {
+    width: 50%;
+}
+
+#form h3 {
+    font-size: 0.8rem;
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+}
+
+#form h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+
+#form p {
+    font-size: 0.8rem;
+    font-weight: 200;
+    padding: 5px;
+    margin: 0;
+}
+
+.headform {
+    display: block;
+    width: 100%;
+}
+
+.inputs {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.inputs input {
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+    color: rgb(159, 159, 159);
+
+    border: solid 1px rgb(221, 221, 221);
+    border-radius: 3px;
+}
+
+.textarea {
+    display: flex;
+}
+
+.textarea textarea{
+    width: 100%;
+    min-height: 50px;
+    padding: 5px;
+    margin: 0;
+    color: rgb(159, 159, 159);
+
+    border: solid 1px rgb(221, 221, 221);
+    border-radius: 3px;
+}
+
+.email {
+    display: flex;
+}
+
+.email input {
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    color: rgb(159, 159, 159);
+
+    border: solid 1px rgb(221, 221, 221);
+    border-radius: 3px;
+}
+
+.pieForm {
+    display: flex;
+    gap: 5px;
+    text-align: start;
+    color: rgb(159, 159, 159);
+}
+
+.pieForm > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pieForm div input {
+    height: 30px;
+    margin: 0;
+    color: rgb(159, 159, 159);
+
+    border: solid 1px rgb(221, 221, 221);
+    border-radius: 3px;
+}
+
+.pieForm div select {
+    height: 34px;
+    margin: 0;
+    color: rgb(159, 159, 159);
+
+    border: solid 1px rgb(221, 221, 221);
+    border-radius: 3px;
+}
+
+.pieform-pago {
+    background-color: lightblue;
+    color: rgb(49, 87, 100);
+    text-align: start;
+    border-radius: 3px;
+}
+
+.pieform-pago h4 {
+    font-weight: 400;
+    padding: 10px;
+}
+
+
+#form button {
+    width: 100%;
+    color: white;
+    
+    padding: 10px;
+    margin-top: 5px;
+    
+    border: none;
+    background-color: rgb(128, 187, 39);
+    border-radius: 3px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#form button:hover {
+    box-shadow: 0px 0px 5px slategrey;
+}
+
+/* FOOTER */
+footer {
+    background-color: rgb(9, 42, 70);
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+footer nav {
+    width: 100%;
+}
+
+footer nav ul{
+    display: flex;
+    gap: 20px;
+    font-size: .9rem;
+    font-weight: 500;
+    list-style: none;
+
     align-items: center;
     justify-content: space-evenly;
 }
 
-.footer {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-}
-
-footer a {
-    color: white;
+footer nav ul a {
+    color: rgb(200, 200, 200);
     text-decoration: none;
-    font-size: 20px;
-    padding: 35px;
-
     transition: 0.3s;
 }
 
-footer a:hover {
-    transform: scale(110%);
-    text-shadow: 1px 1px 15px rgb(0, 0, 0);
+
+/* PAGINA COMPRAS */
+.categorias {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    gap: 5px;
+
+    justify-content: center;
+}
+
+.categoria {
+    border: solid 1px black;
+    text-align: center;
+    padding: 5px;
+}
+
+.categoria h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.categoria h4 {
+    font-weight: 200;
+}
+
+.categoria h3 {
+    font-weight: 600;
+}
+
+.pieForm-botones {
+    display: flex;
+    gap: 5px;
 }

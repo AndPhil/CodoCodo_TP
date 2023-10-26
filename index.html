@@ -1,235 +1,213 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-    <!-- Metadatos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Andrés Phileas">
-    <meta name="description" content="Proyecto CodoCodo con Bootstrap.">
-    <meta name="keywords" content="html, css, bootstrap">
-
-    <!-- BootStrap -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
-
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="img/codoacodo.png">
-
-    <!-- Título -->
-    <title>TP Integrador | CodoCodo</title>
-
+    <title>Document</title>
 </head>
 
 <body>
 
-    <!-- Barra de navegación -->
-    <nav>
-      <div class="navbar-container">
-
-        <div class="navbar-item item1">
-        
-          <a href="#">
-            <img src="img/codoacodo.png" alt="Icono CodoCodo">
-          </a>
-  
-          <h2>Conf Bs As</h2>
-  
-        </div>
-  
-        <div class="navbar-item item2">
-          <a href="#">La conferencia</a>
-          <a href="#">Los oradores</a>
-          <a href="#">El lugar y la fecha</a>
-          <a href="#">Conviértete en orador</a>
-          <a id="compra" href="#">Comprar tickets</a>
-        </div>
-
-      </div>
-    </nav>
-
-    <!-- Imagen cabecera -->
+    <!-- ENCABEZADO -->
     <header>
+        <!-- LOGO Y BRAND -->
+        <section>
+            <div>
+                <img src="./img/codoacodo.png" alt="Logo">
+            </div>
 
-      <img src="img/ba1.jpg" alt="Imagen fondo cabecera.">
+            <div>
+                <h1>Conf BsAs</h1>
+            </div>
+        </section>
 
-      <div class="header-container">
-
-        <div class="header-item">
-
-          <div>
-            <h1>Conf Bs As</h1>
-          <p>Bs As llega por primera vez a Argentina. Un evento para ocmpartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a concer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-          </div>
-          
-          <div class="header-buttons">
-            <button>Quiero ser orador</button>
-            <button id="btn-compra">Comprar tickets</button>
-          </div>
-
-        </div>
-
-      </div>
+        <!-- NAV -->
+        <nav>
+            <a href="#conf">La Conferencia</a>
+            <a href="#oradores">Los Oradores</a>
+            <a href="#lugar">Lugar y Fecha</a>
+            <a href="#form">Conviértete en Orador</a>
+            <a href="./tickets.html" id="btn-compra">Compra Tickets</a>
+        </nav>
 
     </header>
 
-    <!-- Sección Oradores -->
-    <section>
+    <!-- PRINCIPAL -->
+    <main>
 
-      <div class="sec_oradores-titulo">
-        <h3>CONOCE A LOS</h3>
-        <h1>ORADORES</h1>
-      </div>
+        <!-- HERO -->
+        <article id="conf" class="article1">
 
-      <div class="sec_oradores-cards">
+            <div class="article1-filter">
 
-        <!-- Card - Steve Jobs -->
-        <div class="sec_oradores-card">
+                <section>
 
-          <div class="card-img">
-            <img src="img/steve.jpg" alt="Steve Jobs">
-          </div>
+                <div>
+                    <h1>Conf BsAs</h1>
+                    <p>Bs As llega por primera vez a Argentina. Un evento para ocmpartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a concer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                </div>
+                
+                <div>
+                    <button>Quiero ser orador</button>
+                    <a href="./tickets.html">
+                        <button id="btn-compra2">Comprar tickets</button>
+                    </a>
+                </div>
+                
+                </section>
 
-          <div class="card-text">
-            <div class="card-text-topics">
-              <p id="java">Java Script</p>
-              <p id="react">React</p>
             </div>
 
-            <div class="card-text-name">
-              Steve Jobs
-            </div>
+        </article>
 
-            <div class="card-text-info">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere incidunt quae iste atque rerum nostrum eligendi sint possimus itaque delectus harum illum dolorem ex repudiandae repellat quam excepturi, tenetur quo.
-            </div>
+        <!-- ORADORES -->
+        <article id="oradores" class="article2">
+            
+            <!-- TEXTO SECCION -->
+            <section>
+                <h3>CONOCE A LOS</h3>
+                <h2>ORADORES</h2>
+            </section>
 
-          </div>
+            <!-- CARTAS ORADORES -->
+            <section class="article2-cartas">
 
-        </div>
+                <!-- Orador 1 -->
+                <div class="orador_card">
+                    <div>
+                        <img src="./img/steve.jpg" alt="Orador1">
+                    </div>
 
-        <!-- Card - Bill Gates -->
-        <div class="sec_oradores-card">
+                    <div class="orador_card-text">
+                        <div class="orador_card-topics">
+                            <h4 id="java">JavaScript</h4>
+                            <h4 id="react">React</h4>
+                        </div>
 
-          <div class="card-img">
-            <img src="img/bill.jpg" alt="Bill Gates">
-          </div>
+                        <div class="orador_card-info">
+                            <h3 id="orador">Steve Jobs</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, magni. Eveniet nostrum ratione sapiente doloribus, eius sunt fugit quo, officia sequi, laboriosam eum dolore aliquam assumenda rerum ad. Eos, itaque.</p>
+                        </div>
+                    </div>
 
-          <div class="card-text">
-            <div class="card-text-topics">
-              <p id="java">Java Script</p>
-              <p id="react">React</p>
-            </div>
+                </div>
 
-            <div class="card-text-name">
-              Bill Gates
-            </div>
+                <!-- Orador 2 -->
+                <div class="orador_card">
+                    <div>
+                        <img src="./img/bill.jpg" alt="Orador1">
+                    </div>
 
-            <div class="card-text-info">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere incidunt quae iste atque rerum nostrum eligendi sint possimus itaque delectus harum illum dolorem ex repudiandae repellat quam excepturi, tenetur quo.
-              Mas largo para probar flex-start.
-            </div>
+                    <div class="orador_card-text">
+                        <div class="orador_card-topics">
+                            <h4 id="java">JavaScript</h4>
+                            <h4 id="react">React</h4>
+                        </div>
 
-          </div>
+                        <div class="orador_card-info">
+                            <h3 id="orador">Bill Gates</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, magni. Eveniet nostrum ratione sapiente doloribus, eius sunt fugit quo, officia sequi, laboriosam eum dolore aliquam assumenda rerum ad. Eos, itaque.</p>
+                        </div>
+                    </div>
 
-        </div>
+                </div>
 
-        <!-- Card - Ada Lovelace -->
-        <div class="sec_oradores-card">
+                <!-- Orador 3 -->
+                <div class="orador_card">
+                    <div>
+                        <img src="./img/ada.jpeg" alt="Orador3">
+                    </div>
 
-          <div class="card-img">
-            <img src="img/ada.jpeg" alt="Ada Lovelace">
-          </div>
+                    <div class="orador_card-text">
 
-          <div class="card-text">
-            <div class="card-text-topics">
-              <p id="negocios">Negocios</p>
-              <p id="startups">Startups</p>
-            </div>
+                        <div class="orador_card-topics">
+                            <h4 id="negocios">Negocios</h4>
+                            <h4 id="startups">Startups</h4>
+                        </div>
 
-            <div class="card-text-name">
-              Ada Lovelace
-            </div>
+                        <div class="orador_card-info">
+                            <h3 id="orador">Ada Lovalace</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, magni. Eveniet nostrum ratione sapiente doloribus, eius sunt fugit quo, officia sequi, laboriosam eum dolore aliquam assumenda rerum ad. Eos, itaque.</p>
+                        </div>
+                    </div>
 
-            <div class="card-text-info">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere incidunt quae iste atque rerum nostrum eligendi sint possimus itaque delectus harum illum dolorem ex repudiandae repellat quam excepturi, tenetur quo.
-            </div>
+                </div>
 
-          </div>
+            </section>
 
-        </div>
+        </article>
 
-      </div>
+        <!-- RANDOM -->
+        <article id="lugar">
+            <section class="grid">
+                
+                <!-- Columna 1 -->
+                <div class="grid-img">
+                    <img src="./img/honolulu.jpg" alt="Paisaje">
+                </div>
 
-    </section>
+                <!-- Columna 2 -->
+                <div class="grid-info">
+                    <h2>Bs As - Octubre</h2>
+                    <p>Buenos Aires es la provincia y localidad mas grande de los estados de Argentina, en los Estados Unidos. Hondulu es la mas sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Hondulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Hondulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km2 de superficio).</p>
+                    <button>Conocé mas</button>
+                </div>
 
-    <!-- Sección Lugar/Fecha -->
-    <section>
-      <div class="section-container">
-        
-        <div class="section-item izq">
-          <img src="img/honolulu.jpg" alt="Paisaje">
-        </div>
+            </section>
+        </article>
 
-        <div class="section-item der">
-          <h1>Bs As - Octubre</h1>
-          <p>Buenos Aires es la provincia y localidad mas grande de los estados de Argentina, en los Estados Unidos. Hondulu es la mas sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Hondulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Hondulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km2 de superficio).</p>
-          <button id="btn-conoce">Conocé mas</button>
-        </div>
+        <!-- FORMULARIO  -->
+        <article id="form">
 
-      </div>
+            <section>
+                <h3>CONVIERTETE EN UN</h3>
+                <h2>ORADOR</h2>
+                <p>Anotate como orador para dar una charla ignite. Cuentados de que quieres hablar!</p>
+            </section>
 
-    </section>
+            <section>
 
-    <!-- Formulario -->
-    <section>
+                <form action="">
+                    <div class="inputs">
+                        <input type="text" value="Nombre">
+                        <input type="text" value="Apellido">
+                    </div>
 
-      <div class="form-text">
-        <h3>CONVIERTETE EN UN</h3>
-        <h1>ORADOR</h1>
-        <h3>Anotate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</h3>
-      </div>
+                    <div class="textarea">
+                        <textarea name="Topic" cols="" rows="">Sobre que quieres hablar?</textarea>
+                    </div>
+                </form>
 
-      <div class="form-container">
-        
-        <form action="" class="form">
+                <div class="pieForm">
+                    <p>Recuerda incluir un titulo para tu charla</p>
+                </div>
 
-            <div class="form-section">
-              <input class="form-input" type="text" required="Campo requeirdo" placeholder="Nombre">
-              <input class="form-input" type="text" required="Campo requeirdo" placeholder="Apellido">
-            </div>
+                <button type="submit">Enviar</button>
 
-            <div class="form-section">
-              <textarea class="form-area" name="Area de texto" placeholder="Área de texto..." class="text-area"></textarea>
-            </div>
+            </section>
+        </article>
 
-            <p>Recuerda incluir un título para tu charla.</p>
+    </main>
 
-            <div class="form-section">
-                <input type="submit" class="form-button">
-            </div>
-        </form>
-
-      </div>
-
-    </section>
-    <form action=""></form>
-
-    <!-- Pie de página -->
+    <!-- PIE PAGINA -->
     <footer>
-
-      <div class="footer">
-        <a href="3">Preguntas frecuentes</a>
-        <a href="3">Contáctanos</a>
-        <a href="3">Prensa</a>
-        <a href="3">Conferencias</a>
-        <a href="3">Términos y condiciones</a>
-        <a href="3">Privacidad</a>
-        <a href="3">Estudiantes</a>
-      </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Contactanos</a></li>
+                <li><a href="#">Prensa</a></li>
+                <li><a href="#">Conferencias</a></li>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Estudiantes</a></li>
+            </ul>
+        </nav>
 
     </footer>
 
+    <script src="./javaScript.js"></script>
+    
 </body>
 </html>

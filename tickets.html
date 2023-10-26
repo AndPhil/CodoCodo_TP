@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <!-- LOGO Y BRAND -->
+        <section>
+            <div>
+                <img src="./img/codoacodo.png" alt="Logo">
+            </div>
+
+            <div>
+                <h1>Conf BsAs</h1>
+            </div>
+        </section>
+
+        <!-- NAV -->
+        <nav>
+            <a href="./index.html">La Conferencia</a>
+            <a href="./index.html">Los Oradores</a>
+            <a href="./index.html">Lugar y Fecha</a>
+            <a href="./index.html">Conviértete en Orador</a>
+            <a href="./tickets.html" id="btn-compra">Compra Tickets</a>
+        </nav>
+
+    </header>
+
+    <!-- PRINCIPAL -->
+    <main>
+
+        <!-- FORMULARIO COMPRA  -->
+        <div>
+
+            <section class="categorias">
+
+                <div class="categoria" style="border-color: blue;">
+                    <h2>Estudiante</h2>
+                    <h4>Tiene un descuento</h4>
+                    <h3>80%</h3>
+                    <h4>* presentar documentación</h4>
+                </div>
+
+                <div class="categoria" style="border-color: green;">
+                    <h2>Trainee</h2>
+                    <h3>Tiene un descuento:</h3>
+                    <h3>50%</h3>
+                    <p>* presentar documentación</p>
+                </div>
+
+                <div class="categoria" style="border-color: rgb(197, 205, 50);">
+                    <h2>Junior</h2>
+                    <h3>Tiene un descuento:</h3>
+                    <h3>15%</h3>
+                    <p>* presentar documentación</p>
+                </div>
+
+            </section>
+
+        </div>
+
+        <article id="form">
+            <section>
+                <h3>VENTA</h3>
+                <h2>VALOR DEL TICKET $200</h2>
+            </section>
+
+            <section>
+
+                <form class="headform" action="" name="formulario">
+                    <div class="inputs">
+                        <input type="text" name="nombre" placeholder="Nombre">
+                        <input type="text" name="apellido" placeholder="Apellido">
+                    </div>
+
+                    <div class="email">
+                        <input type="email" name="email" placeholder="Correo" autocomplete="off">
+                    </div>
+                </form>
+
+                <form class="pieForm" name="formularioCantidad">
+
+                    <div>
+                        <p>Cantidad</p>
+                        <input type="number" name="cantidad" placeholder="0">
+                    </div>
+
+                    <div>
+                        <p>Categoria</p>
+                        <select name="categoria" id="cat">
+                            <option value="estudiante">Estudiante</option>
+                            <option value="trainee">Trainee</option>
+                            <option value="junior">Junior</option>
+                        </select>
+                    </div>
+
+                </form>
+
+                <div class="pieform-pago">
+                    <h4 id="pago">Total a Pagar: $</h4>
+                </div>
+
+                <div class="pieForm-botones">
+                    <button id="pieForm-boton-borrar" type="submit">Borrar</button>
+                    <button id="pieForm-boton-resumen" type="submit">Resumen</button>
+                </div>
+
+            </section>
+        </article>
+
+    </main>
+
+    <!-- PIE PAGINA -->
+    <footer>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Contactanos</a></li>
+                <li><a href="#">Prensa</a></li>
+                <li><a href="#">Conferencias</a></li>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Estudiantes</a></li>
+            </ul>
+        </nav>
+
+    </footer>
+
+    <script src="./javaScript.js"></script>
+    
+</body>
+</html>
